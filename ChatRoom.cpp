@@ -1,4 +1,4 @@
-// ChatRoom.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// ChatRoom.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 #pragma once
 #include "stdafx.h"
@@ -9,10 +9,10 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 
-	dbHelper.conn("127.0.0.1", "root", "15pbhackav", "chatroom", 3306);
+	dbHelper.conn("127.0.0.1", "root", "", "chatroom", 3306);
 	CTCPServer mySocket;
 	mySocket.init();
-	///»ñÈ¡ipµØÖ·
+	///è·å–ipåœ°å€
 	char hostname[256];
 	gethostname(hostname, 256);
 	HOSTENT* hosts = gethostbyname(hostname);
